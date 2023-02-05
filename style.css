@@ -1,0 +1,124 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    padding: 2rem;
+    padding-bottom: 10rem;
+}
+.form-container form{
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1);
+    height: 45rem;
+    width: 40rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.form-container form h3{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.2rem;
+    color: #333;
+    text-transform: uppercase;
+}
+.form-container form h3:hover{
+    transform: translateY(-0.1rem);
+}
+.form-container form .box{
+    height: 5rem;
+    margin-top: 2rem;
+    border: none;
+    background: #eee;
+    border-radius: 0.5rem;
+}
+.box:hover{
+    transform:translateY(-0.5rem);
+}
+.form-container form .imbox{
+    padding-left: 1rem;
+}
+#btn{
+    border-radius: 0.5rem;
+    border: none;
+    background-image: linear-gradient(to left, #f9e809, #fddb14, #fecd1e, #ffc028, #fdb430, #fda62d, #fc992d, #fb8b2e, #fc762b, #fc5e2c, #fb4230, #f90f37);
+    background-size: 200%;
+    color: rgb(132, 50, 0);
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+#btn:hover{
+    color: rgb(255, 0, 0);
+    background-position: right;
+    transform:translateY(-0.5rem)
+}
+.form-container form .forgot{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    color: crimson;
+}
+.form-container form .forgot:hover{
+    transform:translateY(-0.3rem);
+}
+.form-container form .reg{
+    color: #666;
+    font-size: 1.3rem;
+}
+.form-container form .reg:hover{
+    transform:translateY(-0.3rem);
+}
+.form-container form .reg span{
+    color: crimson;
+    font-size: 1.3rem;
+}
+
+
+@media (max-width:400px){
+    html{
+        font-size: 55%;
+    }
+    .form-container{
+        padding-bottom: 2rem;
+    }
+    .form-container form .reg{
+        line-height: 1.5;
+    }
+    .form-container form .imbox{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:300px){
+    html{
+        font-size: 45%;
+    }
+    .form-container form .imbox{
+        font-size: 1.5rem;
+    }
+    .form-container form .forgot{
+        font-size: 1.5rem;
+    }
+    .form-container form .reg{
+        font-size: 1.5rem;
+    }
+    .form-container form .reg span{
+        font-size: 1.5rem;
+    }
+}
